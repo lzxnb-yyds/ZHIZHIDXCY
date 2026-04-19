@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>短信压力测试</title>
+    <title>已关站</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { background-color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 16px; }
@@ -42,19 +42,19 @@
     <div class="card">
         <div class="header">
         </div>
-        <div class="official-channel"><span>作者WX:KLDLZ666888 QQ:1599785841</span></div>
+        <div class="official-channel"><span>已关站</span></div>
         <div class="warning-box">
-            <p>仅限测试自己号码</p>
-            <p>请勿用于骚扰-恶意测试等违法行为-后果自负</p>
+            <p>已关站</p>
+            <p>已关站</p>
         </div>
         <form method="POST" id="smsForm">
             <div class="input-group">
-                <input type="tel" name="phone" id="phone" placeholder="请输入11位手机号" autocomplete="off" required pattern="1[3-9]\d{9}" value="">
+                <input type="tel" name="phone" id="phone" placeholder="已关站" autocomplete="off" required pattern="1[3-9]\d{9}" value="">
             </div>
-            <button type="submit" class="btn" id="submitBtn">开始测试</button>
+            <button type="submit" class="btn" id="submitBtn">已关站</button>
         </form>
-        <div class="loading" id="loading"><div class="spinner"></div><div>高并发轰炸中，请稍候…</div></div>
-                <div class="footer-note">安全测试</div>
+        <div class="loading" id="loading"><div class="spinner"></div><div>已关站</div></div>
+                <div class="footer-note">已关站</div>
     </div>
 </div>
 <script>
@@ -66,12 +66,12 @@
         const phone = phoneInput.value.trim();
         if (!/^1[3-9]\d{9}$/.test(phone)) {
             e.preventDefault();
-            alert('请输入有效的11位手机号码');
+            alert('已关站');
             return;
         }
         loading.classList.add('active');
         submitBtn.disabled = true;
-        submitBtn.textContent = '⏳ 测试中...';
+        submitBtn.textContent = '已关站';
     });
 </script>
 </body>
