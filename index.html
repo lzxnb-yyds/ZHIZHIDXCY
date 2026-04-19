@@ -11,36 +11,6 @@
         <div class="header">
         </div>
         <div class="official-channel"><span>已关站</span></div>
-        <div class="warning-box">
-            <p>已关站</p>
-            <p>已关站</p>
-        </div>
-        <form method="POST" id="smsForm">
-            <div class="input-group">
-                <input type="tel" name="phone" id="phone" placeholder="已关站" autocomplete="off" required pattern="1[3-9]\d{9}" value="">
-            </div>
-            <button type="submit" class="btn" id="submitBtn">已关站</button>
-        </form>
-        <div class="loading" id="loading"><div class="spinner"></div><div>已关站</div></div>
-                <div class="footer-note">已关站</div>
-    </div>
-</div>
-<script>
-    const form = document.getElementById('smsForm');
-    const loading = document.getElementById('loading');
-    const submitBtn = document.getElementById('submitBtn');
-    form.addEventListener('submit', function(e) {
-        const phoneInput = document.getElementById('phone');
-        const phone = phoneInput.value.trim();
-        if (!/^1[3-9]\d{9}$/.test(phone)) {
-            e.preventDefault();
-            alert('已关站');
-            return;
-        }
-        loading.classList.add('active');
-        submitBtn.disabled = true;
-        submitBtn.textContent = '已关站';
-    });
 </script>
 </body>
 </html>
